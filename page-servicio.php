@@ -52,40 +52,28 @@ get_header(); ?>
 
             <ul class="gallery-service">
                 <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery.jpg"></a></div>
+                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/a1.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/a1.jpg"></a></div>
                 </li>
                 <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery2.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery2.jpg"></a></div>
+                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/a2.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/a2.jpg"></a></div>
                 </li>
                 <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery3.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery3.jpg"></a></div>
+                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/a3.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/a3.jpg"></a></div>
                 </li>
                 <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery4.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery4.jpg"></a></div>
+                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/a4.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/a4.jpg"></a></div>
                 </li>
                 <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery5.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery5.jpg"></a></div>
+                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/a5.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/a5.jpg"></a></div>
                 </li>
                 <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery6.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery6.jpg"></a></div>
+                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/a6.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/a6.jpg"></a></div>
                 </li>
                 <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery7.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery7.jpg"></a></div>
+                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/a7.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/a7.jpg"></a></div>
                 </li>
                 <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery8.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery8.jpg"></a></div>
-                </li>
-                <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery.jpg"></a></div>
-                </li>
-                <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery2.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery2.jpg"></a></div>
-                </li>
-                <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery3.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery3.jpg"></a></div>
-                </li>
-                <li class="col-md-3 col-sm-6">
-                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery4.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/gallery/gallery4.jpg"></a></div>
+                    <div class="gallery-image"><a class="fancybox" href="<?php bloginfo('template_url') ?>/assets/images/a8.jpg" data-fancybox-group="gallery" title="Descripción de la imagen"><img src="<?php bloginfo('template_url') ?>/assets/images/a8.jpg"></a></div>
                 </li>
             </ul>
 

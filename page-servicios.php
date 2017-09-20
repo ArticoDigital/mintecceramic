@@ -16,7 +16,7 @@ get_header(); ?>
             <ul class="row serviceList service-wrap">
                 <li class="col-md-6 col-sm-6">
                     <div class="service-image">
-                        <img src="<?php bloginfo('template_url') ?>/assets/images/feature-image-1.jpg">
+                        <img src="<?php bloginfo('template_url') ?>/assets/images/caracterización-de-materias-primas.jpg">
                         <div class="hoverlink">
                             <div class="icon"><a href="/servicio/"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                         </div>
@@ -29,7 +29,7 @@ get_header(); ?>
                 </li>
                 <li class="col-md-6 col-sm-6">
                     <div class="service-image">
-                        <img src="<?php bloginfo('template_url') ?>/assets/images/feature-image-1.jpg">
+                        <img src="<?php bloginfo('template_url') ?>/assets/images/asesoría-técnica.jpg">
                         <div class="hoverlink">
                             <div class="icon"><a href="/servicio/"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                         </div>
@@ -42,7 +42,7 @@ get_header(); ?>
                 </li>
                 <li class="col-md-6 col-sm-6">
                     <div class="service-image">
-                        <img src="<?php bloginfo('template_url') ?>/assets/images/feature-image-1.jpg">
+                        <img src="<?php bloginfo('template_url') ?>/assets/images/elementos-de-laboratorio.jpg">
                         <div class="hoverlink">
                             <div class="icon"><a href="/servicio/"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                         </div>
@@ -55,13 +55,13 @@ get_header(); ?>
                 </li>
                 <li class="col-md-6 col-sm-6">
                     <div class="service-image">
-                        <img src="<?php bloginfo('template_url') ?>/assets/images/feature-image-1.jpg">
+                        <img src="<?php bloginfo('template_url') ?>/assets/images/comercialización-minerales.jpg">
                         <div class="hoverlink">
                             <div class="icon"><a href="/servicio/"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                         </div>
                     </div>
                     <div class="service-details">
-                        <h3><a href="/servicio/">Elementos de laboratorio</a></h3>
+                        <h3><a href="/servicio/">Comercialización minerales</a></h3>
                         <p>Descripción del servicio </p>
                         <div class="readmore"><a href="/servicio/">Leer más</a></div>
                     </div>

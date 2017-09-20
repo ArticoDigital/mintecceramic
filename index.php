@@ -24,17 +24,16 @@ get_header(); ?>
     <div class="tp-banner-container sliderWraper">
         <div class="tp-banner" >
             <ul>
-                <li data-slotamount="7" data-transition="incude" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="<?php bloginfo('template_url')?>/mintec/images/dummy.png" data-lazyload="<?php bloginfo('template_url')?>/mintec/images/banner1.jpg">
-                    <div class="caption lft large-title tp-resizeme slidertext1" data-x="left" data-y="210" data-speed="600" data-start="2200"><span>Your Dream House</span></div>
-                    <div class="caption lfb large-title tp-resizeme slidertext2" data-x="left" data-y="310" data-speed="600" data-start="2800">Lorem Ipsum is simply dummy text of the printing and typesetting<br>
-                        industry industry's standard dummy text.</div>
-                    <div class="caption lfl large-title tp-resizeme slidertext3" data-x="left" data-y="350" data-speed="600" data-start="3500"><a href="#">Contact Us</a></div>
+                <li data-slotamount="7" data-transition="incude" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="<?php bloginfo('template_url')?>/mintec/images/slide1.jpg" data-lazyload="<?php bloginfo('template_url')?>/mintec/images/slide1.jpg">
+                    <div class="caption lft large-title tp-resizeme slidertext1" data-x="left" data-y="210" data-speed="600" data-start="2200"><span>Servicios</span></div>
+                    <div class="caption lfb large-title tp-resizeme slidertext2" data-x="left" data-y="310" data-speed="600" data-start="2800">Conoce nuestros servicios.</div>
+                    <div class="caption lfl large-title tp-resizeme slidertext3" data-x="left" data-y="350" data-speed="600" data-start="3500"><a href="/servicios">Servicios</a></div>
                 </li>
-                <li data-slotamount="7" data-transition="3dcurtain-vertical" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="<?php bloginfo('template_url')?>/mintec/images/dummy.png" data-lazyload="<?php bloginfo('template_url')?>/mintec/images/banner2.jpg">
+                <li data-slotamount="7" data-transition="3dcurtain-vertical" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="<?php bloginfo('template_url')?>/mintec/images/slide2.jpg" data-lazyload="<?php bloginfo('template_url')?>/mintec/images/slide2.jpg">
                     <div class="caption lfl large-title tp-resizeme slidertext1" data-x="center" data-y="210" data-speed="600" data-start="2200"><span>Construction</span></div>
                     <div class="caption lfb large-title tp-resizeme slidertext4" data-x="center" data-y="310" data-speed="600" data-start="2800">Lorem Ipsum is simply dummy text of the printing and typesetting<br>
                         industry industry's standard dummy text.</div>
-                    <div class="caption lfl large-title tp-resizeme slidertext3" data-x="center" data-y="350" data-speed="600" data-start="3500"><a href="#">Contact Us</a></div>
+                    <div class="caption lfl large-title tp-resizeme slidertext3" data-x="center" data-y="350" data-speed="600" data-start="3500"><a href="#">Contáctanos</a></div>
                 </li>
             </ul>
         </div>
@@ -93,7 +92,7 @@ get_header(); ?>
             <h1>Nuestros <span>Servicios</span></h1>
             <ul class="row serviceList">
                 <li class="col-md-4 col-sm-6">
-                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/mintec/images/feature-image-1.jpg">
+                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/mintec/images/caracterización-de-materias-primas.jpg">
                         <div class="hoverlink">
                             <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                         </div>
@@ -105,7 +104,7 @@ get_header(); ?>
                     </div>
                 </li>
                 <li class="col-md-4 col-sm-6">
-                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/mintec/images/feature-image-2.jpg">
+                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/mintec/images/asesoría-técnica.jpg">
                         <div class="hoverlink">
                             <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                         </div>
@@ -117,7 +116,7 @@ get_header(); ?>
                     </div>
                 </li>
                 <li class="col-md-4 col-sm-6">
-                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/mintec/images/feature-image-3.jpg">
+                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/mintec/images/elementos-de-laboratorio.jpg">
                         <div class="hoverlink">
                             <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                         </div>
@@ -138,8 +137,8 @@ get_header(); ?>
         <div class="container">
             <h1>Últimos  <span>proyectos</span></h1>
             <ul class="row portfolio-service">
-                <li class="col-md-3 col-sm-6">
-                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/portfolio.jpg">
+                <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
+                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/ALIENERGY.jpg">
                         <div class="portfolio-overley">
                             <div class="content">
                                 <h3><a href="#"> ALIENERGY</a></h3>
@@ -148,8 +147,8 @@ get_header(); ?>
                         </div>
                     </div>
                 </li>
-                <li class="col-md-3 col-sm-6">
-                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/portfolio2.jpg">
+                <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
+                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/arca.jpg">
                         <div class="portfolio-overley">
                             <div class="content">
                                 <h3><a href="#">ARCA</a></h3>
@@ -158,21 +157,21 @@ get_header(); ?>
                         </div>
                     </div>
                 </li>
-                <li class="col-md-3 col-sm-6">
-                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/portfolio.jpg">
+                <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
+                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/Alfarera-Pueblo-Viejo.jpg">
                         <div class="portfolio-overley">
                             <div class="content">
-                                <h3><a href="#"> ALIENERGY</a></h3>
+                                <h3><a href="#"> Alfarera Pueblo Viejo</a></h3>
                                 <div class="portfolio-tags"> <span>Algo </span>, <span>Hicimos</span> </div>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="col-md-3 col-sm-6">
-                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/portfolio2.jpg">
+                <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
+                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/arcillas-del-rosario.jpg">
                         <div class="portfolio-overley">
                             <div class="content">
-                                <h3><a href="#">ARCA</a></h3>
+                                <h3><a href="#">Arcillas del rosario</a></h3>
                                 <div class="portfolio-tags"> <span>Algo </span>, <span>Hicimos</span> </div>
                             </div>
                         </div>
