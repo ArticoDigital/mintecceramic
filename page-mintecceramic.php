@@ -48,7 +48,7 @@ get_header(); ?>
 
                 </div>
                 <div class="col-md-5">
-                    <div class="about-image"><img src="<?php bloginfo('template_url') ?>/assets/images/about-jhoss.jpg">
+                    <div class="about-image"><img src="<?php bloginfo('template_url') ?>/assets/images/about.jpg">
                     </div>
                 </div>
             </div>

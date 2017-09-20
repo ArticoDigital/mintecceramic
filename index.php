@@ -78,7 +78,7 @@ get_header(); ?>
                     <div class="readmore"><a href="/mintecceramic">Leer más</a></div>
                 </div>
                 <div class="col-md-5">
-                    <div class="about-image"><img src="<?php bloginfo('template_url')?>/mintec/images/about-jhoss.jpg"></div>
+                    <div class="about-image"><img src="<?php bloginfo('template_url')?>/assets/images/about.jpg"></div>
                 </div>
             </div>
         </div>
