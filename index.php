@@ -91,8 +91,8 @@ get_header(); ?>
         <div class="container">
             <h1>Nuestros <span>Servicios</span></h1>
             <ul class="row serviceList">
-                <li class="col-md-4 col-sm-6">
-                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/mintec/images/caracterización-de-materias-primas.jpg">
+                <li class="col-md-3 col-sm-4">
+                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/assets/images/caracterización-de-materias-primas.jpg">
                         <div class="hoverlink">
                             <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                         </div>
@@ -103,8 +103,8 @@ get_header(); ?>
                         <div class="readmore"><a href="#">Leer más</a></div>
                     </div>
                 </li>
-                <li class="col-md-4 col-sm-6">
-                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/mintec/images/asesoría-técnica.jpg">
+                <li class="col-md-3 col-sm-4">
+                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/assets/images/asesoría-técnica.jpg">
                         <div class="hoverlink">
                             <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                         </div>
@@ -115,8 +115,21 @@ get_header(); ?>
                         <div class="readmore"><a href="#">Leer más</a></div>
                     </div>
                 </li>
-                <li class="col-md-4 col-sm-6">
-                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/mintec/images/elementos-de-laboratorio.jpg">
+                <li class="col-md-3 col-sm-4">
+                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/assets/images/elementos-de-laboratorio.jpg">
+                        <div class="hoverlink">
+                            <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <h3><a href="#">Elementos de laboratorio</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
+                        <div class="readmore"><a href="#">Leer más</a></div>
+                    </div>
+                </li>
+
+                <li class="col-md-3 col-sm-4">
+                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/assets/images/elementos-de-laboratorio.jpg">
                         <div class="hoverlink">
                             <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                         </div>
@@ -135,7 +148,7 @@ get_header(); ?>
     <!--porfolio start-->
     <div class="porfolio-wrap">
         <div class="container">
-            <h1>Últimos  <span>proyectos</span></h1>
+            <h1>Nuestros  <span>clientes</span></h1>
             <ul class="row portfolio-service">
                 <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
                     <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/ALIENERGY.jpg">
@@ -182,59 +195,6 @@ get_header(); ?>
     </div>
     <!--porfolio end-->
 
-    <!--Testimonials start-->
-    <div class="testimonials-wrap">
-        <div class="container">
-            <div class="heading-wrap">
-                <h1>Testimonios</h1>
-            </div>
-            <ul class="owl-carousel testimonials">
-                <li class="item">
-                    <div class="testi-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis augue ultricies, molestie nisl mollis, efficitur velit. Nunc urna ligula, malesuada nec condimentum eu, tincidunt sit amet purus.</p>
-                        <div class="name">John Doe <span>Lorem Ispum</span></div>
-                        <div class="client-image"><img src="<?php bloginfo('template_url')?>/mintec/images/client.jpg"></div>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="testi-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis augue ultricies, molestie nisl mollis, efficitur velit. Nunc urna ligula, malesuada nec condimentum eu, tincidunt sit amet purus.</p>
-                        <div class="name">John Doe <span>Lorem Ispum</span></div>
-                        <div class="client-image"><img src="<?php bloginfo('template_url')?>/mintec/images/client2.jpg"></div>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="testi-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis augue ultricies, molestie nisl mollis, efficitur velit. Nunc urna ligula, malesuada nec condimentum eu, tincidunt sit amet purus.</p>
-                        <div class="name">John Doe <span>Lorem Ispum</span></div>
-                        <div class="client-image"><img src="<?php bloginfo('template_url')?>/mintec/images/client.jpg"></div>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="testi-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis augue ultricies, molestie nisl mollis, efficitur velit. Nunc urna ligula, malesuada nec condimentum eu, tincidunt sit amet purus.</p>
-                        <div class="name">John Doe <span>Lorem Ispum</span></div>
-                        <div class="client-image"><img src="<?php bloginfo('template_url')?>/mintec/images/client2.jpg"></div>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="testi-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis augue ultricies, molestie nisl mollis, efficitur velit. Nunc urna ligula, malesuada nec condimentum eu, tincidunt sit amet purus.</p>
-                        <div class="name">John Doe <span>Lorem Ispum</span></div>
-                        <div class="client-image"><img src="<?php bloginfo('template_url')?>/mintec/images/client.jpg"></div>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="testi-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis augue ultricies, molestie nisl mollis, efficitur velit. Nunc urna ligula, malesuada nec condimentum eu, tincidunt sit amet purus.</p>
-                        <div class="name">John Doe <span>Lorem Ispum</span></div>
-                        <div class="client-image"><img src="<?php bloginfo('template_url')?>/mintec/images/client2.jpg"></div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!--Testimonials end-->
 
 
     <!--Team end-->
