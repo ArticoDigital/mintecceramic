@@ -46,10 +46,12 @@
             <div class="col-md-3 col-sm-4 col-xs-12">
                 <h3>Servicios</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Caracterización de Materias Primas</a></li>
-                    <li><a href="#">Asesoría Técnica</a></li>
-                    <li><a href="#">Elementos de laboratorio</a></li>
-                    <li><a href="#">Comercialización de materias primas</a></li>
+                    <?php $query = new WP_Query(['post_type' => 'servicios']);
+                    while ($query->have_posts()) : $query->the_post(); ?>
+                        <li><a href="<?php the_permalink() ?>"><?php the_title() ?></a></li>
+                    <?php endwhile; ?>
+
+
                 </ul>
             </div>
             <div class="col-md-3 col-sm-4 col-xs-12">

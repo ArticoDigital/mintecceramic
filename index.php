@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-
+<?php remove_filter('the_content', 'wpautop'); ?>
     <!-- Header start -->
 
 
@@ -22,19 +22,26 @@ get_header(); ?>
 
     <!-- Revolution slider start -->
     <div class="tp-banner-container sliderWraper">
-        <div class="tp-banner" >
+        <div class="tp-banner">
             <ul>
-                <li data-slotamount="7" data-transition="incude" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="<?php bloginfo('template_url')?>/mintec/images/slide1.jpg" data-lazyload="<?php bloginfo('template_url')?>/mintec/images/slide1.jpg">
-                    <div class="caption lft large-title tp-resizeme slidertext1" data-x="left" data-y="210" data-speed="600" data-start="2200"><span>Servicios</span></div>
-                    <div class="caption lfb large-title tp-resizeme slidertext2" data-x="left" data-y="310" data-speed="600" data-start="2800">Conoce nuestros servicios.</div>
-                    <div class="caption lfl large-title tp-resizeme slidertext3" data-x="left" data-y="350" data-speed="600" data-start="3500"><a href="/servicios">Servicios</a></div>
-                </li>
-                <li data-slotamount="7" data-transition="3dcurtain-vertical" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="<?php bloginfo('template_url')?>/mintec/images/slide2.jpg" data-lazyload="<?php bloginfo('template_url')?>/mintec/images/slide2.jpg">
-                    <div class="caption lfl large-title tp-resizeme slidertext1" data-x="center" data-y="210" data-speed="600" data-start="2200"><span>Construction</span></div>
-                    <div class="caption lfb large-title tp-resizeme slidertext4" data-x="center" data-y="310" data-speed="600" data-start="2800">Lorem Ipsum is simply dummy text of the printing and typesetting<br>
-                        industry industry's standard dummy text.</div>
-                    <div class="caption lfl large-title tp-resizeme slidertext3" data-x="center" data-y="350" data-speed="600" data-start="3500"><a href="#">Contáctanos</a></div>
-                </li>
+                <?php $query = new WP_Query(['post_type' => 'Banner']);
+                while ($query->have_posts()) : $query->the_post(); ?>
+                    <li data-slotamount="7" data-transition="3dcurtain-vertical" data-masterspeed="1000"
+                        data-saveperformance="on">
+                        <img alt="" src="<?php the_post_thumbnail_url(); ?>"
+                             data-lazyload="<?php the_post_thumbnail_url(); ?>">
+                        <div class="caption lfl large-title tp-resizeme slidertext1" data-x="center" data-y="210"
+                             data-speed="600" data-start="2200"><span><?php the_title() ?></span></div>
+                        <div class="caption lfb large-title tp-resizeme slidertext4" data-x="center" data-y="310"
+                             data-speed="600" data-start="2800"><?php the_content() ?></div>
+                        <div class="caption lfl large-title tp-resizeme slidertext3" data-x="center" data-y="350"
+                             data-speed="600" data-start="3500">
+                            <a href="<?php home_url() . "/" . the_field('boton') ?>"
+                               style="color: white !important;"><?php the_field('boton_texto'); ?></a>
+                        </div>
+                    </li>
+
+                <?php endwhile; ?>
             </ul>
         </div>
     </div>
@@ -62,23 +69,16 @@ get_header(); ?>
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
+                    <?php $mintec = get_post( 2 );  ?>
                     <h1>Acerca De<span> Mintec Ceramic</span></h1>
                     <div class="aboutTxt">Quiénes somos?</div>
-                    <p>
-                        Fundada en el año 2007 Mintec Ceramic Ltda es una empresa especializada en la mejora de la calidad en cada una de las etapas del proceso productivo de la industria ladrillera y otras industrias del sector cerámico.
-                    </p>
-                    <p>Somos especialistas en la caracterización de arcillas y otras materias primas para uso cerámico, la evaluación de residuos industriales para uso en la industria cerámica (co-procesamiento), el desarrollo de pastas cerámicas para los procesos extrusión, prensado y colaje, la optimización del proceso productivo y el desarrollo de nuevos productos siempre pensado en la mejora de la eficiencia energética y la rentabilidad de las empresas.</p>
-                    <ul class="about-service">
-                        <li>Más de 10 años de experiencia</li>
-                        <li>Especialistas en caracterización de arcillas</li>
-                        <li>Selección de materias primas adecuadas</li>
-                        <li>Recursos tecnológicos y personal calificado</li>
-                        <div class="clearfix"></div>
-                    </ul>
+                    <?php echo get_field('vision', 2); ?>
+                    <?php echo get_field('filosofia_institucional', 2); ?>
+                    <br>
                     <div class="readmore"><a href="/mintecceramic">Leer más</a></div>
                 </div>
                 <div class="col-md-5">
-                    <div class="about-image"><img src="<?php bloginfo('template_url')?>/assets/images/about.jpg"></div>
+                    <div class="about-image"><img src="<?php echo get_the_post_thumbnail_url($mintec) ?>"></div>
                 </div>
             </div>
         </div>
@@ -91,55 +91,23 @@ get_header(); ?>
         <div class="container">
             <h1>Nuestros <span>Servicios</span></h1>
             <ul class="row serviceList">
-                <li class="col-md-3 col-sm-4">
-                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/assets/images/caracterización-de-materias-primas.jpg">
-                        <div class="hoverlink">
-                            <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
+                <?php $query = new WP_Query(['post_type' => 'servicios']);
+                while ($query->have_posts()) : $query->the_post(); ?>
+                    <li class="col-md-3 col-sm-4">
+                        <div class="service-image"><img
+                                    src="<?php the_post_thumbnail_url(); ?>">
+                            <div class="hoverlink">
+                                <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="service-details">
-                        <h3><a href="#">Caracterización de Materias Primas</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-                        <div class="readmore"><a href="#">Leer más</a></div>
-                    </div>
-                </li>
-                <li class="col-md-3 col-sm-4">
-                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/assets/images/asesoría-técnica.jpg">
-                        <div class="hoverlink">
-                            <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
+                        <div class="service-details">
+                            <h3><a href="#"><?php the_title() ?></a></h3>
+                            <p><?php echo get_excerpt(20); ?></p>
+                            <div class="readmore"><a href="#">Leer más</a></div>
                         </div>
-                    </div>
-                    <div class="service-details">
-                        <h3><a href="#">Asesoría Técnica</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-                        <div class="readmore"><a href="#">Leer más</a></div>
-                    </div>
-                </li>
-                <li class="col-md-3 col-sm-4">
-                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/assets/images/elementos-de-laboratorio.jpg">
-                        <div class="hoverlink">
-                            <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="service-details">
-                        <h3><a href="#">Elementos de laboratorio</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-                        <div class="readmore"><a href="#">Leer más</a></div>
-                    </div>
-                </li>
+                    </li>
+                <?php endwhile; ?>
 
-                <li class="col-md-3 col-sm-4">
-                    <div class="service-image"><img src="<?php bloginfo('template_url')?>/assets/images/elementos-de-laboratorio.jpg">
-                        <div class="hoverlink">
-                            <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="service-details">
-                        <h3><a href="#">Elementos de laboratorio</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-                        <div class="readmore"><a href="#">Leer más</a></div>
-                    </div>
-                </li>
             </ul>
         </div>
     </div>
@@ -148,64 +116,32 @@ get_header(); ?>
     <!--porfolio start-->
     <div class="porfolio-wrap">
         <div class="container">
-            <h1>Nuestros  <span>clientes</span></h1>
+            <h1>Nuestros <span>clientes</span></h1>
+
             <ul class="row portfolio-service">
-                <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
-                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/ALIENERGY.jpg">
-                        <div class="portfolio-overley">
-                            <div class="content">
-                                <h3><a href="#"> ALIENERGY</a></h3>
-                                <div class="portfolio-tags"> <span>Algo </span>, <span>Hicimos</span> </div>
+                <?php $query = new WP_Query(['post_type' => 'clientes','posts_per_page' => '10']);
+                while ($query->have_posts()) : $query->the_post(); ?>
+                    <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
+                        <div class="project-image"><img src="<?php the_post_thumbnail_url(); ?>">
+                            <div class="portfolio-overley">
+                                <div class="content">
+                                    <h3><a href="#"> <?php the_title() ?></a></h3>
+                                    <div class="portfolio-tags"><?php the_field('servicio') ?></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
-                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/arca.jpg">
-                        <div class="portfolio-overley">
-                            <div class="content">
-                                <h3><a href="#">ARCA</a></h3>
-                                <div class="portfolio-tags"> <span>Algo </span>, <span>Hicimos</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
-                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/Alfarera-Pueblo-Viejo.jpg">
-                        <div class="portfolio-overley">
-                            <div class="content">
-                                <h3><a href="#"> Alfarera Pueblo Viejo</a></h3>
-                                <div class="portfolio-tags"> <span>Algo </span>, <span>Hicimos</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
-                    <div class="project-image"><img src="<?php bloginfo('template_url')?>/mintec/images/arcillas-del-rosario.jpg">
-                        <div class="portfolio-overley">
-                            <div class="content">
-                                <h3><a href="#">Arcillas del rosario</a></h3>
-                                <div class="portfolio-tags"> <span>Algo </span>, <span>Hicimos</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                    </li>
+                <?php endwhile; ?>
             </ul>
         </div>
     </div>
     <!--porfolio end-->
 
 
-
     <!--Team end-->
 
 
-
     <!--Footer start-->
-
-
-
-
 
 
 <?php

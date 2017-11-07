@@ -6,7 +6,7 @@ get_header(); ?>
 
     <div class="inner-heading">
         <div class="container">
-            <h3>Análisis de Arcillas</h3>
+            <h3><?php the_title() ?></h3>
         </div>
     </div>
 

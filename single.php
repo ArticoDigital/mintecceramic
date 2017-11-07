@@ -1,35 +1,38 @@
 <?php
 /**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package mintecceramic
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+    <div class="inner-heading">
+        <div class="container">
+            <h3><?php the_title() ?></h3>
+        </div>
+    </div>
 
-		<?php
-		while ( have_posts() ) : the_post();
+    <div class="inner-content">
+        <div class="container">
+            <?php while (have_posts()) : the_post();?>
+            <!-- Blog List start -->
+            <div class="blogWraper blogdetail">
+                <ul class="blogList">
+                    <li>
+                        <div class="postimg"><img src="<?php the_post_thumbnail_url(); ?>" alt="Blog Title">
+                            <div class="date"><?php echo the_date('d M'); ?></div>
+                        </div>
+                        <div class="post-header margin-top30">
+                            <h4><?php the_title() ?></h4>
+                            <div class="postmeta">Por : <span><?php the_author() ?> </span> </div>
+                        </div>
+                        <?php the_content() ?>
+                    </li>
+                </ul>
+            </div>
+    <?php endwhile; ?>
+        </div>
+    </div>
 
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation();
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

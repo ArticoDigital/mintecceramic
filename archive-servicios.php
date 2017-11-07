@@ -20,14 +20,14 @@ get_header(); ?>
                         <div class="service-image">
                             <img src="<?php the_post_thumbnail_url(); ?>">
                             <div class="hoverlink">
-                                <div class="icon"><a href="/servicio/"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                <div class="icon"><a href="<?php echo the_permalink() ?>"><i class="fa fa-link" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="service-details">
                             <h3><a href="/servicio/"><?php the_title() ?></a></h3>
                             <p><?php echo get_excerpt(50); ?></p>
-                            <div class="readmore"><a href="/servicio/">Leer más</a></div>
+                            <div class="readmore"><a href="<?php echo the_permalink() ?>">Leer más</a></div>
                         </div>
                     </li>
                 <?php endwhile; ?>

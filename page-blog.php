@@ -11,107 +11,38 @@ get_header(); ?>
         </div>
     </div>
     <!--inner header end-->
-
-
     <div class="inner-content">
         <div class="container">
 
             <!-- Blog List start -->
+
+
             <div class="blogWraper">
                 <ul class="row blogGrid">
-                    <li class="col-md-4 col-sm-6">
-                        <div class="blog-inter">
-                            <div class="postimg"> <img src="<?php bloginfo('template_url')?>/assets/images/blog/1.jpg" alt="Blog Title">
-                                <div class="date"> 17 SEP</div>
+                    <?php $query = new WP_Query('category_name=blog');
+                    while ($query->have_posts()) : $query->the_post(); ?>
+                        <li class="col-md-4 col-sm-6">
+                            <div class="blog-inter">
+
+                                <div class="postimg"><img
+                                            src="<?php the_post_thumbnail_url() ?>"
+                                            alt="Blog Title">
+                                    <div class="date"><?php the_date('d M'); ?></div>
+                                </div>
+                                <div class="post-header">
+                                    <h4><a href="/blog-single"><?php the_title() ?></a></h4>
+                                    <div class="postmeta">por : <span><?php the_author() ?></span></div>
+                                </div>
+                                <div class="postmeta">
+                                    <p><?php the_excerpt()?></p>
+                                    <div class="readmore"><a href="<?php echo the_permalink() ?>">Leer más</a></div>
+                                </div>
                             </div>
-                            <div class="post-header">
-                                <h4><a href="/blog-single">Análisis de Arcillas</a></h4>
-                                <div class="postmeta">por : <span>Camilo Quintero</span> </div>
-                            </div>
-                            <div class="postmeta">
-                                <p>Trabajamos como laboratorio de arcillas de las principales ingenierías dedicadas a la fabricación de bienes de equipo para la industria...</p>
-                                <div class="readmore"><a href="/blog-single">Leer más</a></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-4 col-sm-6">
-                        <div class="blog-inter">
-                            <div class="postimg"> <img src="<?php bloginfo('template_url')?>/assets/images/blog/1.jpg" alt="Blog Title">
-                                <div class="date"> 17 SEP</div>
-                            </div>
-                            <div class="post-header">
-                                <h4><a href="/blog-single">Análisis de Arcillas</a></h4>
-                                <div class="postmeta">por : <span>Camilo Quintero</span> </div>
-                            </div>
-                            <div class="postmeta">
-                                <p>Trabajamos como laboratorio de arcillas de las principales ingenierías dedicadas a la fabricación de bienes de equipo para la industria...</p>
-                                <div class="readmore"><a href="/blog-single">Leer más</a></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-4 col-sm-6">
-                        <div class="blog-inter">
-                            <div class="postimg"> <img src="<?php bloginfo('template_url')?>/assets/images/blog/1.jpg" alt="Blog Title">
-                                <div class="date"> 17 SEP</div>
-                            </div>
-                            <div class="post-header">
-                                <h4><a href="/blog-single">Análisis de Arcillas</a></h4>
-                                <div class="postmeta">por : <span>Camilo Quintero</span> </div>
-                            </div>
-                            <div class="postmeta">
-                                <p>Trabajamos como laboratorio de arcillas de las principales ingenierías dedicadas a la fabricación de bienes de equipo para la industria...</p>
-                                <div class="readmore"><a href="/blog-single">Leer más</a></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-4 col-sm-6">
-                        <div class="blog-inter">
-                            <div class="postimg"> <img src="<?php bloginfo('template_url')?>/assets/images/blog/1.jpg" alt="Blog Title">
-                                <div class="date"> 17 SEP</div>
-                            </div>
-                            <div class="post-header">
-                                <h4><a href="/blog-single">Análisis de Arcillas</a></h4>
-                                <div class="postmeta">por : <span>Camilo Quintero</span> </div>
-                            </div>
-                            <div class="postmeta">
-                                <p>Trabajamos como laboratorio de arcillas de las principales ingenierías dedicadas a la fabricación de bienes de equipo para la industria...</p>
-                                <div class="readmore"><a href="/blog-single">Leer más</a></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-4 col-sm-6">
-                        <div class="blog-inter">
-                            <div class="postimg"> <img src="<?php bloginfo('template_url')?>/assets/images/blog/1.jpg" alt="Blog Title">
-                                <div class="date"> 17 SEP</div>
-                            </div>
-                            <div class="post-header">
-                                <h4><a href="/blog-single">Análisis de Arcillas</a></h4>
-                                <div class="postmeta">por : <span>Camilo Quintero</span> </div>
-                            </div>
-                            <div class="postmeta">
-                                <p>Trabajamos como laboratorio de arcillas de las principales ingenierías dedicadas a la fabricación de bienes de equipo para la industria...</p>
-                                <div class="readmore"><a href="/blog-single">Leer más</a></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-md-4 col-sm-6">
-                        <div class="blog-inter">
-                            <div class="postimg"> <img src="<?php bloginfo('template_url')?>/assets/images/blog/1.jpg" alt="Blog Title">
-                                <div class="date"> 17 SEP</div>
-                            </div>
-                            <div class="post-header">
-                                <h4><a href="/blog-single">Análisis de Arcillas</a></h4>
-                                <div class="postmeta">por : <span>Camilo Quintero</span> </div>
-                            </div>
-                            <div class="postmeta">
-                                <p>Trabajamos como laboratorio de arcillas de las principales ingenierías dedicadas a la fabricación de bienes de equipo para la industria...</p>
-                                <div class="readmore"><a href="/blog-single">Leer más</a></div>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    <?php endwhile; ?>
                 </ul>
 
-                <!-- Pagination -->
+                <!-- Pagination
                 <div class="pagiWrap">
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
@@ -125,7 +56,7 @@ get_header(); ?>
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
 
