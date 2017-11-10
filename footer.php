@@ -15,12 +15,12 @@
     <div class="container">
         <div class="newletter_des">
             <h5>Suscríbete a nuestro newsletter mensual</h5>
-            <form action="register.html">
-                <label class="fa fa-envelope-o"></label>
-                <input type="text" placeholder="Ingresa tu email" class="form-control">
-                <button>Enviar</button>
-            </form>
+
+            <?php echo do_shortcode( '[contact-form-7 id="132" title="newsletter"]' ); ?>
+
+
         </div>
+    </div>
     </div>
 </div>
 <!--Newsletter end-->
