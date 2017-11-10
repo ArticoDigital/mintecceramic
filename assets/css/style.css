@@ -575,7 +575,7 @@ font-weight: 600; text-transform: uppercase;}
 .information {overflow: hidden; padding-right: 70px;}
 .information > strong {color: #000; display: table; font-size: 16px; font-weight: 700; margin-bottom: 5px; text-transform: uppercase;}
 .information > p {font-size: 13px; line-height: 22px; margin: 0;}
-.contact-form input, .contact-form textarea {color: #8c8c8c; float: left; border: 1px solid #ddd; font-size: 12px; line-height: 32px; margin-bottom: 15px; padding:10px 20px; width:100%;}
+.contact-form input, .contact-form textarea {color: #8c8c8c; float: left; border: 1px solid #ddd; font-size: 12px; line-height: 18px; margin-bottom: 15px; padding:10px 20px; width:100%; max-height: 240px;}
 .contact-form {text-align: center;}
 .contact-now .contact {
     margin-bottom: 10px;

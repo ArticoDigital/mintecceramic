@@ -28,23 +28,9 @@ get_header(); ?>
                     <div class="col-md-8 column">
                         <div class="contact-form">
                             <div id="message"></div>
-                            <form method="post" action="contact.php" name="contactform" id="contactform">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input name="name" type="text" id="name" placeholder="Nombre">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" placeholder="Celular">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input name="email" type="text" id="email" placeholder="Email">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <textarea rows="4" name="comments" id="comments" placeholder="Mensaje"></textarea>
-                                    </div>
-                                    <button title="" class="button" type="submit" id="submit">ENVIAR</button>
-                                </div>
-                            </form>
+                            <?php while (have_posts()) : the_post();
+                                the_content();
+                            endwhile; ?>
                         </div>
                     </div>
 
