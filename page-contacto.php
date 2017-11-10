@@ -49,7 +49,7 @@ get_header(); ?>
                             </div>
                             <!-- Contact Info -->
                             <div class="contact"> <span><i class="fa fa-phone"></i></span>
-                                <div class="information"> <strong>Phone No:</strong>
+                                <div class="information"> <strong>TELÉFONO No:</strong>
                                     <p>+57 301 632 63 65</p>
                                     <p>+57 318 368 26 95</p>
                                 </div>
