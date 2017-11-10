@@ -969,7 +969,9 @@ font-family: 'FontAwesome';
 .sliderTxt p{font-size:14px;}
 }
 
-
+span.wpcf7-not-valid-tip{
+    display: inline-block !important;
+}
 
 
 
