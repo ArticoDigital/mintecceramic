@@ -97,13 +97,13 @@ get_header(); ?>
                         <div class="service-image"><img
                                     src="<?php the_post_thumbnail_url(); ?>">
                             <div class="hoverlink">
-                                <div class="icon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></div>
+                                <div class="icon"><a href="<?php echo the_permalink() ?>"><i class="fa fa-link" aria-hidden="true"></i></a></div>
                             </div>
                         </div>
                         <div class="service-details">
                             <h3><a href="#"><?php the_title() ?></a></h3>
                             <p><?php echo get_excerpt(20); ?></p>
-                            <div class="readmore"><a href="#">Leer más</a></div>
+                            <div class="readmore"><a href="<?php echo the_permalink() ?>">Leer más</a></div>
                         </div>
                     </li>
                 <?php endwhile; ?>
@@ -119,7 +119,7 @@ get_header(); ?>
             <h1>Nuestros <span>clientes</span></h1>
 
             <ul class="row portfolio-service">
-                <?php $query = new WP_Query(['post_type' => 'clientes','posts_per_page' => '10']);
+                <?php $query = new WP_Query(['post_type' => 'clientes','posts_per_page' => '4']);
                 while ($query->have_posts()) : $query->the_post(); ?>
                     <li class="col-md-3 col-sm-6" style="padding: 0 45px;">
                         <div class="project-image"><img src="<?php the_post_thumbnail_url(); ?>">
