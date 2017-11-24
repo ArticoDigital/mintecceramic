@@ -53,7 +53,7 @@ get_header(); ?>
             <!--Row Start-->
             <div class="row">
                 <div class="col-md-9">
-                    <h2>BUSCANDO UN CONSTRUCTOR DE CALIDAD PARA SU PROXIMO PROYECTO?</h2>
+                    <h2>Por que entendemos que la arcilla es el corazón de su negocio...</h2>
                 </div>
                 <div class="col-md-3">
                     <div class="quote-btn"><a href="/contacto">Contáctanos</a></div>
