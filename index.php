@@ -53,7 +53,7 @@ get_header(); ?>
             <!--Row Start-->
             <div class="row">
                 <div class="col-md-9">
-                    <h2>ANALIZAMOS ARCILLAS PARA MEJORAR LA PRODUCTIVIDAD DE DU NEGOCIO</h2>
+                    <h2>ANALIZAMOS ARCILLAS PARA MEJORAR LA PRODUCTIVIDAD DE TU NEGOCIO</h2>
                 </div>
                 <div class="col-md-3">
                     <div class="quote-btn"><a href="/contacto">Contáctanos</a></div>
